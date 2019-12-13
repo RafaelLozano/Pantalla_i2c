@@ -6,14 +6,10 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); //
 
 void setup()
 {
-    // Inicializar el LCD
-    lcd.init();
 
-    //Encender la luz de fondo.
-    lcd.backlight();
-
-    // Escribimos el Mensaje en el LCD.
-    lcd.print("Hola Mundo");
+    lcd.init(); // Inicializar el LCD
+    lcd.backlight(); //Encender la luz de fondo.
+    lcd.print("Hola Mundo"); // Escribimos el Mensaje en el LCD.
 }
 
 void loop()
